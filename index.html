@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <div class="wrapper">
+                <img class="size photo first-photo" src="img/Kapibara1.jpg" alt="Капибара" >
+                <img class="size photo" src="img/Kapibara2.jpeg" alt="Капибара" >
+                <img class="size photo" src="img/Kapibara3.jpeg" alt="Капибара" >
+                <img class="size photo" src="img/Kapibara4.jpg" alt="Капибара" >
+                <img class="size photo" src="img/Kapibara5.jpg" alt="Капибара" >
+                <img class="size photo" src="img/Kapibara6.jpeg" alt="Капибара" >
+                <img class="size photo" src="img/Kapibara7.jpeg" alt="Капибара" >
+                <i id="prev" onclick="changeImage(-1)" class="butt fa-2x fa-solid fa-chevron-left"></i>
+                <i id="next" onclick="changeImage(1)" class="butt fa-2x fa-solid fa-chevron-right"></i>
+                <div onclick="getId(event)" class="dots">
+                    <div id ="0" class="dot active-dot"></div>
+                    <div id="1" class="dot"></div>
+                    <div id="2" class="dot"></div>
+                    <div id="3" class="dot"></div>
+                    <div id="4" class="dot"></div>
+                    <div id="5" class="dot"></div>
+                    <div id="6" class="dot"></div>
+                </div>
+                
+            </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
