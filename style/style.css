@@ -37,8 +37,8 @@ body {
   display: flex;
 }
 .container .wrapper #prev {
-  position: absolute;
-  top: 43%;
+  position: fixed;
+  top: 48%;
   left: 2%;
   padding: 10px;
   color: white;
@@ -49,8 +49,8 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .container .wrapper #next {
-  position: absolute;
-  top: 43%;
+  position: fixed;
+  top: 48%;
   right: 2%;
   padding: 10px;
   color: white;
@@ -96,6 +96,24 @@ body {
   }
   .container .wrapper {
     width: 85%;
+    flex-direction: column;
+  }
+  .container .wrapper #prev {
+    top: 45%;
+  }
+  .container .wrapper #next {
+    top: 45%;
+  }
+  .dots {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .dots .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 10px;
   }
 }
 @media (max-width: 500px) {
@@ -120,29 +138,27 @@ body {
 }
 @media (max-width: 370px) {
   .container .wrapper #prev {
-    top: 35%;
-    left: 0%;
+    top: 46%;
     font-size: 1.5rem;
     padding: 7px;
   }
   .container .wrapper #next {
-    top: 35%;
-    right: 0%;
+    top: 46%;
     font-size: 1.5rem;
     padding: 7px;
   }
 }
 @media (max-width: 290px) {
   .container .wrapper #prev {
-    top: 35%;
-    left: 0%;
-    font-size: 1.5rem;
+    top: 47%;
+    left: 2%;
+    font-size: 1.1rem;
     padding: 7px;
   }
   .container .wrapper #next {
-    top: 35%;
-    right: 0%;
-    font-size: 1.5rem;
+    top: 47%;
+    right: 2%;
+    font-size: 1.1rem;
     padding: 7px;
   }
   .dots .dot {
@@ -153,21 +169,21 @@ body {
 }
 @media (max-width: 220px) {
   .container .wrapper #prev {
-    top: 30%;
-    font-size: 1.1rem;
+    top: 48%;
+    font-size: 1rem;
   }
   .container .wrapper #next {
-    top: 30%;
-    font-size: 1.1rem;
+    top: 48%;
+    font-size: 1rem;
   }
 }
 @media (max-width: 190px) {
   .container .wrapper #prev {
-    top: 30%;
+    top: 48%;
     font-size: 1rem;
   }
   .container .wrapper #next {
-    top: 30%;
+    top: 48%;
     font-size: 1rem;
   }
   .dots .dot {

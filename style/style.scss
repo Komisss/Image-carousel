@@ -35,8 +35,8 @@ body{
         width: 70%;
         display: flex;
         #prev{
-            position: absolute;
-            top: 43%;
+            position: fixed;
+            top: 48%;
             left: 2%;
             padding: 10px;
             color: white;
@@ -48,8 +48,8 @@ body{
             }
         }
         #next{
-            position: absolute;
-            top: 43%;
+            position: fixed;
+            top: 48%;
             right: 2%;
             padding: 10px;
             color: white;
@@ -100,6 +100,26 @@ body{
         width: 100%;
         .wrapper{
             width: 85%;
+            flex-direction: column;
+            #prev{
+                top: 45%;
+            }
+            #next{
+                top: 45%;
+            }
+        }
+        
+    }
+
+    .dots{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        .dot{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            margin: 10px;
         }
     }
 }
@@ -110,6 +130,7 @@ body{
         .wrapper{
             width: 95%;
             flex-direction: column;
+            
         }
     }
 
@@ -131,14 +152,12 @@ body{
     .container{
         .wrapper{
             #prev{
-                top: 35%;
-                left: 0%;
+                top: 46%;
                 font-size: 1.5rem;
                 padding: 7px;
             }
             #next{
-                top: 35%;
-                right: 0%;
+                top: 46%;
                 font-size: 1.5rem;
                 padding: 7px;
             }
@@ -150,15 +169,15 @@ body{
     .container{
         .wrapper{
             #prev{
-                top: 35%;
-                left: 0%;
-                font-size: 1.5rem;
+                top: 47%;
+                left: 2%;
+                font-size: 1.1rem;
                 padding: 7px;
             }
             #next{
-                top: 35%;
-                right: 0%;
-                font-size: 1.5rem;
+                top: 47%;
+                right: 2%;
+                font-size: 1.1rem;
                 padding: 7px;
             }
         }
@@ -177,12 +196,12 @@ body{
     .container{
         .wrapper{
             #prev{
-                top: 30%;
-                font-size: 1.1rem;
+                top: 48%;
+                font-size: 1rem;
             }
             #next{
-                top: 30%;
-                font-size: 1.1rem;
+                top: 48%;
+                font-size: 1rem;
             }
         }
     }
@@ -192,11 +211,11 @@ body{
     .container{
         .wrapper{
             #prev{
-                top: 30%;
+                top: 48%;
                 font-size: 1rem;
             }
             #next{
-                top: 30%;
+                top: 48%;
                 font-size: 1rem;
             }
         }
